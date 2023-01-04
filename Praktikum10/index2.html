@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            width: 500px;
+            height: 300px;
+            margin: 50px 150px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        function imagePicker(){
+            let pilihan = document.getElementById("select").value;
+            const list_image = ["bison.png","singa.png", "babi.png", "anjing.png", "monyet.png", "yahahaha.png"]
+            if(pilihan == "bison"){
+                let select = list_image[0]
+                document.getElementById("image").src = `Images/${select}`
+            }
+
+            if(pilihan == "singa"){
+                let select = list_image[1]
+                document.getElementById("image").src = `Images/${select}`
+            }
+
+            if(pilihan == "babi"){
+                let select = list_image[2]
+                document.getElementById("image").src = `Images/${select}`
+            }
+
+            if(pilihan == "anjing"){
+                let select = list_image[3]
+                document.getElementById("image").src = `Images/${select}`
+            }
+
+            if(pilihan == "monyet"){
+                let select = list_image[4]
+                document.getElementById("image").src = `Images/${select}`
+            }
+
+            if(pilihan == "yahahaha"){
+                let select = list_image[5]
+                document.getElementById("image").src = `Images/${select}`
+            }
+        }
+    </script>
+</head>
+<body>
+    <select name="" id="select" onchange="imagePicker()">
+        <option value="">Pilih Gambar</option>
+        <option value="bison">Bison</option>
+        <option value="singa">Singa</option>
+        <option value="babi">Babi</option>
+        <option value="anjing">Anjing</option>
+        <option value="monyet">Monyet</option>
+        <option value="yahahaha">Yahahaha</option>
+    </select>
+    <br>
+    <div class="container">
+        <div class="box">
+            <img id="image">        
+        </div>
+    </div>
+</body>
+</html>

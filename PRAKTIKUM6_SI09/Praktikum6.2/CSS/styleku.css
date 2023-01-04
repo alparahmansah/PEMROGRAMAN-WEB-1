@@ -1,0 +1,26 @@
+h1{
+    color: blue
+}
+#header{
+    background-color: beige; text-align: center;
+}
+blockquote{
+    background-color: red;  font-weight: bold; 
+}
+.gambar{
+    text-align: center;
+}
+.yahaha{
+    text-align: center;
+}
+.yahaha ul{ 
+    list-style:none ; display: flex; justify-content: center;
+} 
+.yahaha ul li{
+    margin: 0cm 1cm;
+}
+.jawa{ 
+    color: brown; font-size: 5cm; font-weight: bold;
+}
+body{ background-color: greenyellow;
+}
